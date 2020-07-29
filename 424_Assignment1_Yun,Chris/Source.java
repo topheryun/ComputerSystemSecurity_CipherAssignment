@@ -121,8 +121,6 @@ public class Source {
                 init = a;
         }
 
-        //if maxlen == 7, so the column must be 7
-        //get.length will be the row number;
         maxlen = init.length();
         char[][] grid = new char[get.length][maxlen];
 
@@ -148,17 +146,8 @@ public class Source {
     }
 
     public static String[] decrypt(String str) {
-//        int getnum = str.length();
-
-//        //get possible division number
-//        List < Integer > val = new ArrayList < Integer > ();
-//        for (int x = 1; x < getnum; x++) {
-//            if (getnum % x == 0)
-//                val.add(x);
-//        }
         List<Integer> val = new ArrayList<Integer>();
         val.add(7);
-//        val.add(11);
 
         String[] dec = new String[val.size()];
         for (int x = 0; x < val.size(); x++) {
